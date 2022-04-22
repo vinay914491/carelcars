@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><link rel="stylesheet" href="car%20rental%20system.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <nav>
+    <ul class="topnav" id="dropdownClick">
+        <li><img class="logo-image" src="car%20logo.png"></li>
+        <li class="topnav-right"><a href="popular locations.html">POPULAR LOCATIONS</a></li>
+        <li class="topnav-right"><a href="manage booking.html">MANAGE BOOKING</a></li>
+		<li class="topnav-right"><a href="login.html">LOG IN</a></li>
+        <li class="topnav-right"><a href="signup.html">SIGN UP</a></li>
+        <li class="topnav-right"><a href="car.html">HOME</a></li>
+        </ul>
+    </nav>
+
+        <div class="searchbar">
+    <div class="search">
+    <div class="icon"></div>
+    <div class="input">
+        <input type="text" placeholder="search your ideal car" id="mysearch"></div>
+    <span class="clear" onclick="document.getElementById('mysearch').value='' "></span></div>
+    <script>
+    const icon=document.querySelector('.icon');
+    const search=document.querySelector('.search');
+    icon.onclick=function(){
+            search.classList.toggle('active');
+        }
+    </script></div>
+    <div class="container">
+      <div id="sidebar" onclick="togglemenu()">
+      <div class="toggle-btn">
+<span></span>
+        <span></span>
+        <span></span>
+      </div>
+<ul>
+  <li><a href="history.html">ADMIN</a></li>
+  <li><a href="fare calculator.html">FARE CALCULATOR</a></li>
+  <li><a href="popular locations.html">POPULAR LOCATIONS</a></li>
+  <li>ABOUT US</li>
+  <li>CONTACT US</li>
+  <li>FAQ'S</li>
+</ul>
+    </div>
+    <script type="text/javascript">
+    function togglemenu(){
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+    </script>
+        <div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="XUV 700.jpg"></div>
+    <div class="swiper-slide"><img src="tata punch.jpg"></div>
+    <div class="swiper-slide"><img src="thar.jpg"></div>
+      <div class="swiper-slide"><img src="scorpio.jpg"></div>
+      <div class="swiper-slide"><img src="toyato fortuner.jpg"></div>
+      <div class="swiper-slide"><img src="bolero.jpg"></div>
+	  <div class="swiper-slide"><img src="datson.jpg"></div>
+	  <div class="swiper-slide"><img src="kia sonet.jpg"></div>
+	  <div class="swiper-slide"><img src="creta.jpg"></div>
+	  <div class="swiper-slide"><img src="maruti suzuki ciaz.jpg"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+        </div></div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction:false,
+            },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+      clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+        </script>
+
+<div class="topright">
+<form class="form">
+    <center><b style="font-size: 25px;color:black;">ENTER PARTICULARS</b><br></center>
+<table>
+    <tr><td>
+Choose car</td><td>
+<select class="choosecar" name="car" id="c1">
+<option value="-1" selected>[Choose yours]</option>
+<option value="1">Ford</option>
+<option value="2">Toyota</option>
+<option value="3">Mahindra</option>
+<option value="4">Scoda</option>
+<option value="5">Hyundai</option>
+<option value="6">Chevorlet</option>
+</select></td></tr>
+
+  <tr><td>Choose city</td><td>
+<select class="choosecar" name="car" id="c1">
+<option value="-1" selected>[Choose yours]</option>
+<option value="1">Mumbai</option>
+<option value="2">New delhi</option>
+<option value="3">Chennai</option>
+<option value="4">Kolkata</option>
+<option value="5">Hyderabad</option>
+<option value="6">Ahmedabad</option>
+    <option value="7">Visakhapatnam</option>
+    <option value="8">Jaipur</option>
+    <option value="9">Pune</option>
+    <option value="10">Amritsar</option>
+    <option value="11">Bangalore</option>
+    <option value="12">Lucknow</option>
+</select></td></tr>
+
+  <tr><td>  Pick Up Date</td><td>
+<input class="choosecar" type="date"></td></tr>
+
+<tr><td> Dropoff Date</td><td>
+<input class="choosecar" type="date"></td></tr>
+
+<tr><td>Purpose of rental</td><td class="radio">
+<input type="radio">Business
+<input type="radio" >Leisure</td></tr>
+
+<tr><td>pick up time</td><td>
+<input class="time" type="time" name="del" id="d3" size="30"/></td></tr>
+
+    <tr><td>dropoff time</td><td>
+<input class="time" type="time" name="del" id="d3" size="30"/></td></tr>
+
+<tr><td>Return location:</td><td>
+<input  class="choosecar" type="text" name="re" id="d4" size="30"/></td></tr>
+
+</table><div class="book">
+<button class="button"><a href="manage booking.html">Book my car</a></button></div>
+</form>
+</div>
+
+        <div class="topright">
+            <div class="bot">
+<h1>OUR MOST POPULAR DESTINATIONS</h1>
+</div>
+            <div class="c">
+<img class="cityimg" src="bangalore.jpg">
+<div class="but">
+BANGALORE
+</div>
+<b><p class="trip">Trip Starting:  15000 /day</p></b>
+<div class="inf">
+<p class="triptext">Trip best with:FORTUNER, CIAZ.</p>
+</div>
+</div>
+            <div class="c">
+<img class="cityimg" src="goa.png">
+<div class="but">
+GOA
+</div>
+<b><p class="trip">Trip Starting:  20000 /day</p></b>
+<div class="inf">
+<p class="triptext">Trip best with:SCORPIO, XUV500.</p>
+</div>
+</div>
+            <div class="c">
+<img class="cityimg" src="kolkata.png">
+<div class="but">
+KOLKATA
+</div>
+<b><p class="trip">Trip Starting:  35000 /day</p></b>
+<div class="inf">
+<p class="triptext">Trip best with:CRETA,BOLERO.</p>
+</div>
+</div>
+            <div class="c">
+<img class="cityimg" src="gujarat.jpg">
+<div class="but">
+GUJARAT
+</div>
+<b><p class="trip">Trip Starting:  20000 /day</p></b>
+<div class="inf">
+<p class="triptext">Trip best with:DUSTER,THAR.</p>
+</div>
+</div>
+</div>
+
+        <div class="sechead">
+     <header>WHAT DO YOU GET</header>
+   </div>
+   <div class="cont">
+    <div class="row">
+        <div class="col-4"><div class="box">
+            <div class="icon"></div><div><img src="service.png"></div><label class="lab">QUALITY SERVICE</label>
+            <p> Customers expect consistently high quality in the areas of consulting, service and repair. Therefore, we give a comprehensive view of all quality criteria is required for insights about one’s own service quality and to really we understand the needs of the customers. </p></div></div>
+        <div class="col-4"><div class="box">
+            <div class="icon"></div><div><img src="safetravel.jpg"></div><label class="lab">SAFE EXPERIENCE</label>
+            <p>Our rental car ensures that you are not vulnerable to virus transmission when you travel by helping you practice social distancing. Also, all our Carel cars are insured, which means that you will also remain secure against unforeseen incidents enroute on your trip.whatever be your requirement, you can rely on our Carel rental car for a safe and secure travel experience.  </p></div></div>
+        <div class="col-4"><div class="box">
+            <div class="icon"></div><div><img src="cartoon.jpg"></div><label class="lab">WIDE VARIETY OF CARS</label>
+            <p>Be it business travel, leisure travel, intercity getaways or just city zipping - be spoilt for choices with our exhaustive range of well-maintained Hatchbacks, Sedans, MUVs, SUVs, Hybrids and Luxury Cars on rent. We offer over 25 vehicle makes to choose from across various cities, ensuring you get the best rental cars at lowest prices throughout India.Our self drive cars on rent come with unlimited kilometres  </p></div></div></div>
+    <div class="row">
+        <div class="col-12">
+                    <button class="learnmore">LEARN MORE</button></div></div></div>
+
+        <footer>
+    <div class="row">
+        <div class="col-3">
+        <h1>Company:</h1>
+            <ul>
+            <li>Home</li>
+                <li>Blog</li>
+                <li>About us</li>
+                <li>sitemap</li>
+            </ul>
+        </div>
+        <div class="col-3">
+        <h1>Quick Links</h1>
+            <ul>
+            <li>Deals</li>
+                <li>Contact us</li>
+                <li>FAQ'S</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+        <div class="col-3">
+        <h1>Reach us</h1>
+            <ul>
+            <li class="add">Our Address:Carel cars Infrastructure Services Limited Plot No-84,tech city,Rushikonda,Visakhapatnam-530048</li>
+                <li>Email:selfdrivecarelcars@gmail.com</li>
+                <li>Phn:9512345678</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+
+    </body>
+    </html>
